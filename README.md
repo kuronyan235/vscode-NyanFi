@@ -4,7 +4,7 @@
 NyanFi Batch language support for VS Code
 * Color Syntax
 * Comment blocks
-Markdown: ![iamge](https://raw.githubusercontent.com/kuronyan235/NyanFi/master/image/06266BE1B01E34.png)
+![iamge](https://raw.githubusercontent.com/kuronyan235/NyanFi/master/image/06266BE1B01E34.png)
 
 ## Installation
 
@@ -27,8 +27,6 @@ Visual Studio Code v0.10.x (November 2015)
 
 ## Credits
 
-* [Visual Studio Code](https://code.visualstudio.com/)
-* [vscode-docs on GitHub](https://github.com/Microsoft/vscode-docs)
 * [NyanFi](http://nekomimi.la.coocan.jp/freesoft/nyanfi.htm)
-
-# test1
+* [Visual Studio Code](https://code.visualstudio.com/)
+* [vscode-docs on GitHub](https://github.com/kuronyan235/vscode-NyanFi)
