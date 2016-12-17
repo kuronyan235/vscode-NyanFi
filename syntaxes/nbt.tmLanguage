@@ -151,7 +151,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(?&lt;=^|:)\s*(?i)(Set)(?:(_BufferIndex|_buffer|_codepage)|(_\w+))([+\-*%\/]{0,1}=)</string>
+			<string>(?&lt;=^|:)\s*(?i)(Set)(?:(_BufferIndex|_buffer|_codepage)|(_(\.\.){0,1}\w+))([+\-*%\/]{0,1}=)</string>
 		</dict>
 
 		<!--popvar pushvar-->
@@ -180,7 +180,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(?&lt;=^|:)\s*(?i)(PushVar|PopVar)(?:(_(BufferIndex|buffer|codepage))|(_\w+))\b</string>
+			<string>(?&lt;=^|:)\s*(?i)(PushVar|PopVar)(?:(_(BufferIndex|buffer|codepage))|(_(\.\.){0,1}\w+))\b</string>
 		</dict>
 
 		<!--Add Ins_-->
@@ -209,7 +209,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(?&lt;=^|:)\s*(?i)(Add|Ins)(?:(_buffer)|(_\w+))(&lt;&lt;)</string>
+			<string>(?&lt;=^|:)\s*(?i)(Add|Ins)(?:(_buffer)|(_(\.\.){0,1}\w+))(&lt;&lt;)</string>
 		</dict>
 		<!--formatとか-->
 		<dict>
@@ -237,7 +237,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(?&lt;=^|:)\s*(?i)(Format|FormatDI|FormatDT|Random|ReadINI)(?:(_BufferIndex|_buffer|_codepage)|(_\w+))(=)</string>
+			<string>(?&lt;=^|:)\s*(?i)(Format|FormatDI|FormatDT|Random|ReadINI)(?:(_BufferIndex|_buffer|_codepage)|(_(\.\.){0,1}\w+))(=)</string>
 		</dict>
 		<!--test_-->
 		<dict>
@@ -270,7 +270,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(?&lt;=^|:)\s*(?i)(test)(_)(?:(UserName|ExePath|TmpPath|CurPath|OppPath|FileName|BaseName|DirName|FileSize|FileSizeF|FileTime|FileTimeF|Date|Time|TabNo|FileCount|DirCount|CurFiles|SelCount|SelFileCount|SelDirCount|SelFiles|VolumeLabel|SortMode|SelText|LineNo|LineText|CursorPosY|CursorPosX|PageSize|Battery|TaskCount|MatchedStr|CodePage|MenuIndex|ExitCode|WinWidth|WinHeight|Clipboard|DownloadName|LastWatchLog|Buffer|BufferLength|BufferCount|BufferIndex|BufferLine)|(\w+))(==|!=|&gt;=|&lt;=|&gt;|&lt;)</string>
+			<string>(?&lt;=^|:)\s*(?i)(test)(_)(?:(UserName|ExePath|TmpPath|CurPath|OppPath|FileName|BaseName|DirName|FileSize|FileSizeF|FileTime|FileTimeF|Date|Time|TabNo|FileCount|DirCount|CurFiles|SelCount|SelFileCount|SelDirCount|SelFiles|VolumeLabel|SortMode|SelText|LineNo|LineText|CursorPosY|CursorPosX|PageSize|Battery|TaskCount|MatchedStr|CodePage|MenuIndex|ExitCode|WinWidth|WinHeight|Clipboard|DownloadName|LastWatchLog|Buffer|BufferLength|BufferCount|BufferIndex|BufferLine)|((\.\.){0,1}\w+))(==|!=|&gt;=|&lt;=|&gt;|&lt;)</string>
 		</dict>
 		<!--Debug_-->
 		<dict>
@@ -397,7 +397,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(?&lt;=^|:)\s*(?i)(SetExeOpt)(_(?:[WOH]{1,3}|[HA]{1,2}))\b</string>
+			<string>(?&lt;=^|:)\s*(?i)(SetExeOpt)(_(?:[WOHL]{1,3}|[HA]{1,2}))\b</string>
 		</dict>
 		<dict>
 			<key>captures</key>
@@ -642,7 +642,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(?i)(%)(?:(UserName|ExePath|TmpPath|CurPath|OppPath|FileName|BaseName|DirName|FileSize|FileSizeF|FileTime|FileTimeF|Date|Time|TabNo|FileCount|DirCount|CurFiles|SelCount|SelFileCount|SelDirCount|SelFiles|VolumeLabel|ScrMode|SortMode|SelText|LineNo|LineText|CursorPosY|CursorPosX|PageSize|Battery|TaskCount|MatchedStr|CodePage|MenuIndex|ExitCode|WinWidth|WinHeight|Clipboard|DownloadName|LastWatchLog|Buffer|BufferLength|BufferCount|BufferIndex|BufferLine)|(\w+))(%)</string>
+			<string>(?i)(%)(?:(UserName|ExePath|TmpPath|CurPath|OppPath|FileName|BaseName|DirName|FileSize|FileSizeF|FileTime|FileTimeF|Date|Time|TabNo|FileCount|DirCount|CurFiles|SelCount|SelFileCount|SelDirCount|SelFiles|VolumeLabel|ScrMode|SortMode|SelText|LineNo|LineText|CursorPosY|CursorPosX|PageSize|Battery|TaskCount|MatchedStr|CodePage|MenuIndex|ExitCode|WinWidth|WinHeight|Clipboard|DownloadName|LastWatchLog|Buffer|BufferLength|BufferCount|BufferIndex|BufferLine)|((\.\.){0,1}\w+))(%)</string>
 		</dict>
 
 		<key>doubleQuotedStringEscapes</key>
@@ -655,12 +655,12 @@
 	</dict>
   
         <key>name</key>
-        <string>Batch File</string>
+        <string>NyanFi</string>
         <key>scopeName</key>
-        <string>source.dosbatch</string>
+        <string>source.ntb</string>
         <key>fileTypes</key>
         <array>
-            <string>bat</string>
+            <string>ntb</string>
         </array>
     </dict>
 </plist>

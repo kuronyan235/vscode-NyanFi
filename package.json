@@ -2,7 +2,7 @@
     "name": "vscode-nyanfi",
     "displayName": "NyanFi",
     "description": "nbt",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "publisher": "kuroNyan",
     "engines": {
         "vscode": "^1.0.0"
@@ -24,7 +24,7 @@
         }],
         "grammars": [{
             "language": "NyanFi",
-            "scopeName": "source.dosbatch",
+            "scopeName": "source.ntb",
             "path": "./syntaxes/nbt.tmLanguage"
         }]
     }
