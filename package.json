@@ -2,10 +2,10 @@
     "name": "vscode-nyanfi",
     "displayName": "NyanFi",
     "description": "nbt",
-    "version": "0.1.11",
+    "version": "0.1.13",
     "publisher": "kuroNyan",
     "engines": {
-        "vscode": "^1.0.0"
+        "vscode": "^0.10.1"
     },
     "categories": [
         "Languages"
@@ -15,6 +15,11 @@
         "color": "#009BFF",
         "theme": "light"
     },
+	"keywords": [
+		"vscode",
+		"nyanfi",
+		"nbt"
+	],
     "contributes": {
         "languages": [{
             "id": "NyanFi",
